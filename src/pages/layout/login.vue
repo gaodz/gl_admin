@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <el-container direction="vertical">
     <el-header>123123</el-header>
     <el-aside>456</el-aside>
     <el-main>7890
