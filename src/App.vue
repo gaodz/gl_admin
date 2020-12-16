@@ -1,18 +1,11 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="HelloWorld"/>
-  <HelloWorld msg="HelloVue"/>
-  <hello msg="vue 3.0"/>
+  <router-view></router-view>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import hello from './pages/hello.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    hello
   }
 }
 </script>
