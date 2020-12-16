@@ -1,13 +1,17 @@
 <template>
-  <el-container style="height: 100%;background: gray" direction="vertical">
-    <el-header>123123</el-header>
-    <el-container style="height: calc(100% - 60px);background: green">
-      <el-aside>456</el-aside>
-      <el-main>7890
-        <img alt="Vue logo" src="../../assets/logo.png">
-      </el-main>
-    </el-container>
-  </el-container>
+  <div class="login">
+    <el-form :inline="true" :model="loginForm" class="login-form-inline login-form">
+      <el-form-item label="账号">
+        <el-input v-model="loginForm.userName" placeholder="账号"></el-input>
+      </el-form-item>
+      <el-form-item label="密码">
+        <el-input v-model="loginForm.userName" placeholder="密码"></el-input>
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" @click="onSubmit">登录</el-button>
+      </el-form-item>
+    </el-form>
+  </div>
 </template>
 <script>
 // import { createApp } from 'vue' 
@@ -17,21 +21,34 @@ export default {
   components: {},
   data() {
     return {
-
+      loginForm: {
+          userName: '',
+          passWord: ''
+        }
     }
   },
-  computed: {
 
-  },
   mounted() {
  
   },
   methods: {
-   
+   onSubmit() {
+        console.log('submit!',this.$route);
+         // window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
+         this.$router.push('/home')
+      }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.login {
+height: 100%;
+/*background-image: url('../../assets/images/login_background.png');
+background-repeat:no-repeat;
+background-position:left;
+background-origin:content-box;
+background-size:100%;*/
+background-color: gray
+}
 </style>
