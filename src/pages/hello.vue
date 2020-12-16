@@ -1,15 +1,16 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <a target="_blank" href="https://vue-docs-next-zh-cn.netlify.app/guide/installation.html">https://vue-docs-next-zh-cn.netlify.app/guide/installation.html</a>
+    <a target="_blank" href="https://element-plus.gitee.io/#/zh-CN/component/container">https://element-plus.gitee.io/#/zh-CN/component/container</a>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
-  },
+  // props: {
+  //   msg: String
+  // },
   data() {
     return{
       // msg:'HelloWorld'
