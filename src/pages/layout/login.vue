@@ -1,7 +1,7 @@
 <template>
-  <el-container direction="vertical">
+  <el-container style="height: 100%;background: gray" direction="vertical">
     <el-header>123123</el-header>
-    <el-container >
+    <el-container style="height: calc(100% - 60px);background: green">
       <el-aside>456</el-aside>
       <el-main>7890
         <img alt="Vue logo" src="../../assets/logo.png">
