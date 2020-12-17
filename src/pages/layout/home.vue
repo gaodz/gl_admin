@@ -1,20 +1,22 @@
 <template>
-  <el-container style="height: 100%;background: gray" direction="vertical">
-    <el-header>123123</el-header>
-    <el-container style="height: calc(100% - 60px);background: green">
-      <el-aside>456</el-aside>
-      <el-main>7890
+  <el-container style="height: 100%;">
+    <el-header style="background: #248E36">123123</el-header>
+    <el-container style="height: calc(100% - 60px);" direction="horizontal">
+      <el-aside style="background: #BFBF0F">
+        <nav-menu></nav-menu>
+      </el-aside>
+      <el-main style="background: #1C2EAD">7890
         <img alt="Vue logo" src="../../assets/logo.png">
       </el-main>
     </el-container>
   </el-container>
 </template>
 <script>
-// import { createApp } from 'vue' 
-// import ElementPlus from 'element-plus';
-// import 'element-plus/lib/theme-chalk/index.css'; 
+import navMenu from './navMenu'
 export default {
-  components: {},
+  components: {
+    navMenu
+  },
   data() {
     return {
 

@@ -4,7 +4,7 @@ import ElementPlus from 'element-plus';
 // createApp(App).mount('#app')
 import mainStyle from './assets/main.css'
 import router from './router'
-
+import 'element-plus/lib/theme-chalk/index.css';
 const app = createApp(App)
 app.use(mainStyle)
 app.use(router)

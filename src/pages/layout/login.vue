@@ -1,11 +1,11 @@
 <template>
   <div class="login">
-    <el-form :inline="true" :model="loginForm" class="login-form-inline login-form">
+    <el-form :inline="true" :model="loginForm" class="login-form">
       <el-form-item label="账号">
         <el-input v-model="loginForm.userName" placeholder="账号"></el-input>
       </el-form-item>
       <el-form-item label="密码">
-        <el-input v-model="loginForm.userName" placeholder="密码"></el-input>
+        <el-input type="passWord" v-model="loginForm.passWord" placeholder="密码"></el-input>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="onSubmit">登录</el-button>
@@ -43,12 +43,18 @@ export default {
 
 <style scoped>
 .login {
+overflow: hidden;
 height: 100%;
 /*background-image: url('../../assets/images/login_background.png');
 background-repeat:no-repeat;
 background-position:left;
 background-origin:content-box;
 background-size:100%;*/
-background-color: gray
+background-color: #36D8DB;
 }
+.login-form {
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 270px);
+ }
 </style>
